@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBDOL PUZZLE GAME</title>
+    <link rel="icon" href="/img/circleVbdol.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div id = "game">
+            <div id = "menu">
+                <div id = "menu-heading">VBDOL PUZZLE GAME</div>
+                <div class = "lvl" id = "easy" onclick = "OpenLevel(0);">EASY</div>
+                <div class = "lvl" id = "medium" onclick = "OpenLevel(1);">MEDIUM</div>
+                <div class = "lvl" id = "hard" onclick = "OpenLevel(2);">HARD</div>
+                <div class = "lvl" id = "very-hard" onclick = "OpenLevel(3)">VERY HARD</div>
+                <div class = "lvl" id = "impossible" onclick = "OpenLevel(7);">IMPOSSIBLE</div>
+                <br><br><br>
+                <div id = "rules-btn" onclick = "ShowRules();">RULES</div>
+            </div>
+            <div id = "level"></div>
+            <div id = "rules-page">
+                <div id = "rules">
+                    <div id = "rules-heading">RULES</div>
+                    <div id = "rules-text">- Some glasses (or test tubes to be more exact xD), your task is to combine liquids of the same color!<br>
+                        You can transfer water of different colors from one glass to another only if the other glass is empty or if the top layer of water is the same color as the one from which the water will be taken.<br>
+                        The glass you selected will be highlighted to avoid confusion.<br>
+                        The Restart button will take you back to the beginning of the level, and every time you open the same level, the water will be shuffled.<br>
+                        Check out the real game 'Water sort puzzle' on the play store, I cloned it.</div>
+                    <div id = "back" onclick = "HideRules();">BACK</div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <footer>
+            Created by <a href="https://github.com/VBDOL"><img src="/img/githubicon.png" alt="GitHub"></a>
+            <a href="nstagram.com/vbdol.dev/"><img src="/img/Instagramicon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/victor-b-o-leme-237763269/"><img src="/img/iconlinkedin.png" alt="Linkedin"></a>
+        </footer>
+    </body>
+</html>
