@@ -52,6 +52,7 @@ body {
     font-weight: 600;
     line-height: 80px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #level {
