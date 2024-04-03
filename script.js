@@ -233,15 +233,15 @@ function shuffle(x) {
 }
 
 window.ShowRules = function() {
-    document.getElementById("rules-page").style.display = "block";
+    document.getElementById("rules-page").classList.add("show"); // Adicione esta linha
     setTimeout(function() {
         document.getElementById("rules-page").style.opacity = "1";
-    },50);
+    }, 50);
 }
 
 window.HideRules = function() {
     setTimeout(function() {
-        document.getElementById("rules-page").style.display = "none";
-    },500);
+        document.getElementById("rules-page").classList.remove("show"); // Altere esta linha
+    }, 500);
     document.getElementById("rules-page").style.opacity = "0";
 }
