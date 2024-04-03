@@ -232,16 +232,41 @@ function shuffle(x) {
     return a;
 }
 
-window.ShowRules = function() {
-    document.getElementById("rules-page").style.display = "block";
+// Função para mostrar as regras
+function ShowRules() {
+    const rulesPage = document.getElementById("rules-page");
+    rulesPage.style.display = "block";
     setTimeout(function() {
-        document.getElementById("rules-page").style.opacity = "1";
-    },50);
+        rulesPage.style.opacity = "1";
+    }, 50);
 }
 
-window.HideRules = function() {
+// Função para ocultar as regras
+function HideRules() {
+    const rulesPage = document.getElementById("rules-page");
+    rulesPage.style.opacity = "0";
     setTimeout(function() {
-        document.getElementById("rules-page").style.display = "none";
-    },500);
-    document.getElementById("rules-page").style.opacity = "0";
+        rulesPage.style.display = "none";
+    }, 500);
 }
+
+
+// Função para mostrar ou ocultar as regras
+window.ToggleRules = function() {
+    const rulesPage = document.getElementById("rules-page");
+    const currentDisplay = rulesPage.style.display;
+
+    if (currentDisplay === "none") {
+        // Se as regras estiverem ocultas, exiba-as
+        rulesPage.style.display = "block";
+        setTimeout(function() {
+            rulesPage.style.opacity = "1";
+        }, 50);
+    } else {
+        // Caso contrário, oculte as regras
+        rulesPage.style.opacity = "0";
+        setTimeout(function() {
+            rulesPage.style.display = "none";
+        }, 500);
+    }
+};
