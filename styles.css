@@ -174,7 +174,7 @@ body {
 #rules-btn {
     position: fixed;
     right : calc(50vw - 200px); /* Centraliza horizontalmente */
-    top: calc(100vh - 100px); /* Posiciona 20px acima do rodapé */
+    top: calc(100vh - 110px); /* Posiciona 20px acima do rodapé */
     height: 50px;
     width: 200px;
     background-color: lightgreen;
