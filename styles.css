@@ -197,6 +197,11 @@ body {
     transition: 0.5s linear;
 }
 
+/* Adicione esta linha */
+#rules-page.show {
+    display: block;
+}
+
 #rules {
     position: absolute;
     top: 100px;
