@@ -173,8 +173,8 @@ body {
 
 #rules-btn {
     position: fixed;
-    left: calc(100vw - 200px);
-    top: calc(100vh - 50px);
+    left: calc(50vw - 200px);
+    top: calc(100vh - 100px);
     height: 50px;
     width: 200px;
     background-color: lightgreen;
@@ -231,10 +231,10 @@ body {
 
 #back {
     position: absolute;
-    top: calc(100% - 120px + 65px + 10px);
+    bottom: 20px; /* Ajuste a distância do rodapé conforme necessário */
+    right: 20px; /* Ajuste a distância da margem direita conforme necessário */
     height: 40px;
     width: 100px;
-    left: calc(100% - 100px);
     background-color: rgb(100, 255, 100);
     font-size: 20px;
     line-height: 40px;
