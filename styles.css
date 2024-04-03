@@ -173,8 +173,8 @@ body {
 
 #rules-btn {
     position: fixed;
-    right: calc(50vw - 200px);
-    top: calc(100vh - 100px);
+    right : calc(50vw - 200px); /* Centraliza horizontalmente */
+    top: calc(100vh - 100px); /* Posiciona 20px acima do rodapé */
     height: 50px;
     width: 200px;
     background-color: lightgreen;
@@ -183,6 +183,8 @@ body {
     font-size: 25px;
     line-height: 50px;
     font-weight: 500;
+}
+
 }
 
 #rules-page {
@@ -220,7 +222,7 @@ body {
 }
 
 #rules-text {
-    position: absolute;
+    position: relative;
     top: 70px;
     left: 5%;
     width: 90%;
@@ -242,9 +244,12 @@ body {
     border-radius: 10px 0 0 10px;
 }
 
+
 #alert-button:hover {
     background-color: rgb(150,255,150);
 }
+
+
 footer {
     background-color: #333;
     color: #fff;
